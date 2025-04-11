@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSwift - Online Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-icon">🍔</span>
+                    FoodSwift
+                </div>
+                <div class="nav-links">
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#restaurants">Restaurants</a>
+                    <a href="#app">Download App</a>
+                    <a href="#about">About Us</a>
+                </div>
+                <a href="#" class="btn" id="auth-btn">Sign In / Sign Up</a>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Delicious Food, Delivered to Your Doorstep</h1>
+            <p>Browse restaurants with real-time menu availability, track your order in real-time, and pay with your preferred method.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter your delivery address..." id="address-input">
+                <button id="find-food-btn">Find Food</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose FoodSwift?</h2>
+                <p>We solve the common challenges of online food ordering with our innovative platform</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Real-Time Menu Updates</h3>
+                    <p>Always see what's actually available right now with live menu updates from restaurants.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Live Order Tracking</h3>
+                    <p>Follow your food's journey from the kitchen to your doorstep with minute-by-minute updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Multiple Payment Options</h3>
+                    <p>Pay how you want with credit cards, digital wallets, cash on delivery, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Scheduled Ordering</h3>
+                    <p>Plan ahead by scheduling your orders for later in the day or week.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Exclusive Deals</h3>
+                    <p>Enjoy restaurant-specific promotions and loyalty rewards on our platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Easy Reordering</h3>
+                    <p>Quickly order your favorites again with just a few taps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Order your favorite food in just a few simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Set Your Location</h3>
+                    <p>Enter your address to find all the available restaurants that deliver to you.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose a Restaurant</h3>
+                    <p>Browse menus with real-time availability to find what you're craving.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Place Your Order</h3>
+                    <p>Customize your meal, add special instructions, and choose your payment method.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Track & Enjoy</h3>
+                    <p>Follow your order in real-time and enjoy your food when it arrives!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-restaurants" id="restaurants">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Restaurants</h2>
+                <p>Discover top-rated restaurants in your area with up-to-date menus</p>
+            </div>
+            <div class="restaurant-grid" id="restaurant-container">
+                <!-- Restaurant cards will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section class="app-promo" id="app">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2>Get the FoodSwift App</h2>
+                    <p>Enjoy an even better experience with our mobile app. Track your delivery in real-time, receive exclusive offers, and manage your orders on the go.</p>
+                    <div class="app-links">
+                        <a href="#">
+                            <span class="app-icon">📱</span>
+                            App Store
+                        </a>
+                        <a href="#">
+                            <span class="app-icon">🤖</span>
+                            Google Play
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image">
+                    Mobile App Preview
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied users</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"FoodSwift has changed the way I order food. The real-time tracking feature is a game-changer, and I love that I can see exactly what items are available before I order."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AR</div>
+                        <div class="author-info">
+                            <h4>Alex Rodriguez</h4>
+                            <p>Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As someone who hates carrying cash, I love that FoodSwift offers so many payment options. The app is intuitive, and customer service is always responsive when I need help."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h4>Maria Johnson</h4>
+                            <p>Food Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Satisfy Your Cravings?</h2>
+            <p>Join thousands of food lovers who have discovered a better way to order their favorite meals online.</p>
+            <a href="#" class="btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🍔</span>
+                        FoodSwift
+                    </div>
+                    <p class="footer-text">Revolutionizing the way you order food online with real-time tracking and multiple payment options.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Discover</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Cuisines</a></li>
+                        <li><a href="#">Popular Dishes</a></li>
+                        <li><a href="#">Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodSwift. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
